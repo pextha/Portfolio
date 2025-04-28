@@ -1,0 +1,211 @@
+#skills {
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.skillTitle1 {
+    font-size: 1.5rem; /* Increase the font size */
+    font-weight: 700; /* Make it bold */
+    margin-top: 2rem; /* Add spacing below */
+    color: #ffffff9a; /* Optional: Change the color if needed */
+    text-align: center; /* Center align the text */
+}
+
+.skillDesc {
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 51rem;
+    padding: 0 2rem;
+}
+
+.skillBars {
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columns on wider screens */
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.skillBar {
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+
+.skillBarImg {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.skillBarText>p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+@media screen and (max-width:720px) {
+    .skillBarText>p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .skillBarText>p {
+        font-size: 3vw;
+    }
+    .skillBarImg {
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .skillBarText>h2 {
+        font-size: 5vw;
+    }
+}
+
+.skillCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.skillCard {
+    width: 150px;
+    text-align: center;
+}
+
+.skillCard h2 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #cecbcb;
+}
+
+.circlePercentage {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffc107; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progressCircle {
+    width: 100%; /* Match the width of the parent */
+    height: 100%; /* Match the height of the parent */
+    border-radius: 50%; /* Make the shape circular */
+    background: conic-gradient(#ffc107 0deg, #e0e0e0 0deg); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progressBar {
+    background: #e0e0e0;
+    border-radius: 20px;
+    height: 10px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.progress {
+    background: #ffc107; 
+    height: 100%;
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;
+}
+
+.percentage {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.languageCard {
+    text-align: center;
+    padding: 1rem;
+    flex: 0 0 100px; /* Set a fixed width for each card */
+}
+
+.languageImage {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.languageCard h3 {
+    font-size: 1rem;
+    color: #333;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.sliderContent {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.sliderImage {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.slider h3 {
+    font-size: 1rem;
+    color: #dad5d5;
+}
+
+.prevButton,
+.nextButton {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    
+}
+
+.prevButton {
+    left: -40px;
+}
+
+.nextButton {
+    right: -40px;
+}
