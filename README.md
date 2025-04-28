@@ -8,6 +8,7 @@ This project is a personal portfolio website developed to demonstrate web develo
 It focuses on clean design, smooth animations, and an easy-to-navigate user experience.
 
 ✨ Features
+
 Fully responsive design
 
 Smooth animations using Framer Motion
@@ -21,6 +22,7 @@ Contact form integration
 Optimized performance
 
 🛠️ Technologies Used
+
 React.js
 
 Framer Motion
